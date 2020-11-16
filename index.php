@@ -1,3 +1,7 @@
 <?php 
- echo 'coucou';
+  include 'header.php';
+
+
+
+  include 'footer.php';
 ?>
