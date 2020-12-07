@@ -5,7 +5,6 @@
 
   switch($page) {
     case 'cuisine':
-      $titre = "Cuisine";
       $page_include = "cuisine";
       break;
     case 'index':
@@ -19,6 +18,14 @@
     default:
       $titre = "Oups";
       $page_include = '404';
+      break;
+    }
+    switch($cuisine){
+      case "chinoise":
+      $titre ="Cuisine Chinoise";
+      break;
+      case "slovaque":
+      $titre = "Cuisine slovaque";
       break;
     }
 
