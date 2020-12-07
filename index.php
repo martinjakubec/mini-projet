@@ -1,20 +1,23 @@
-<?php 
+<?php
   $page = isset($_GET['page']) ? $_GET['page'] : 'index';
-  $cusine
-  
+  $cuisine = isset($_GET['cuisine']) ? $_GET['cuisine'] : '';
+
   include 'header.php';
 
   echo '</br>';
 
 
   switch($page) {
-    case 'cuisine': 
+    case 'cuisine':
       include 'cuisine.php';
       break;
     case 'index':
       include 'frontpage.php';
       break;
-    default: 
+    case 'liens' :
+      include 'liens.php';
+      break;
+    default:
       include '404.php';
       break;
   }
