@@ -1,6 +1,6 @@
 <?php 
   $page = isset($_GET['page']) ? $_GET['page'] : 'index';
-  
+  $cusine
   
   include 'header.php';
 
