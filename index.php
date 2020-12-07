@@ -1,27 +1,44 @@
 <?php
   $page = isset($_GET['page']) ? $_GET['page'] : 'index';
   $cuisine = isset($_GET['cuisine']) ? $_GET['cuisine'] : '';
-
-  include 'header.php';
-
-  echo '</br>';
-
+  $titre = isset($_GET['titre']) ? $_GET['titre'] : '';
 
   switch($page) {
     case 'cuisine':
-      include 'cuisine.php';
+      $titre = "Cuisine";
+      $page_include = "cuisine";
       break;
     case 'index':
-      include 'frontpage.php';
+      $titre = "Accueil";
+      $page_include = 'frontpage';
       break;
     case 'liens' :
-      include 'liens.php';
+      $titre = "Liens utiles";
+      $page_include = 'liens';
       break;
     default:
-      include '404.php';
+      $titre = "Oups";
+      $page_include = '404';
       break;
-  }
-  echo '</br>';
+    }
 
-  include 'footer.php';
+      $page_include = $page_include.".php";
 ?>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <title><?php echo $titre ?></title>
+  <link id = "csslink" href="style1.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+      <?php include 'header.php'; ?>
+  </header>
+  <main>
+    <?php include $page_include; ?>
+  </main>
+  <footer>
+      <?php include 'footer.php'; ?>
+  </footer>
+</body>
