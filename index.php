@@ -1,15 +1,23 @@
 <?php
   $page = isset($_GET['page']) ? $_GET['page'] : 'index';
-  $cuisine = isset($_GET['cuisine']) ? $_GET['cuisine'] : '';
   $titre = isset($_GET['titre']) ? $_GET['titre'] : '';
 
   switch($page) {
-    case 'cuisine':
-      $page_include = "cuisine";
+    case 'animation':
+      $titre = "CSS : Animation";
+      $page_include = "animation";
       break;
     case 'index':
       $titre = "Accueil";
       $page_include = 'frontpage';
+      break;
+    case 'transformation' :
+      $titre = "CSS : Transformation";
+      $page_include = 'transformation';
+      break;
+    case 'imgdefond' :
+      $titre = "CSS : Image de fond";
+      $page_include = 'imgdefond';
       break;
     case 'liens' :
       $titre = "Liens utiles";
@@ -20,14 +28,7 @@
       $page_include = '404';
       break;
     }
-    switch($cuisine){
-      case "chinoise":
-      $titre ="Cuisine Chinoise";
-      break;
-      case "slovaque":
-      $titre = "Cuisine slovaque";
-      break;
-    }
+
 
       $page_include = $page_include.".php";
 ?>
