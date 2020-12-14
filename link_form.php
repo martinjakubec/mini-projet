@@ -11,26 +11,40 @@
 
 <?php
 if (isset($_POST['name']) && isset($_POST['link'])) {
-  $name = $_POST['name'];
-  $link = $_POST['link'];
-  $comment = isset($_POST['comment']) ? $_POST['comment'] : '';
+  $name = trim($_POST['name']);
+  $link = trim($_POST['link']);
+  $comment = isset($_POST['comment']) ? trim($_POST['comment']) : ' ';
 
   $name = htmlentities($name);
   $link = htmlentities($link);
   $comment = htmlentities($comment);
-
+  $newTime = time();
 
   
     $linkfile = fopen('links.txt', 'a+');
-    fwrite($linkfile, "$name --- $link --- $comment --- $newTime" . PHP_EOL);
+    fwrite($linkfile, "$name --- $link --- $comment --- $newTime" . 'ENDOFENTRY'. PHP_EOL);
     fclose($linkfile);
 }
 ?>
 
 <?php 
   $readingLinkFile = fopen('links.txt', 'r');
-  while(!feof($readingLinkFile)) {
-    $line = fgets($readingLinkFile);
-    echo $line.'</br>';
-  }
+  $links = fread($readingLinkFile, filesize('links.txt') === 0 ? 1 : filesize('links.txt'));
+  $links = explode('ENDOFENTRY', $links);
+  foreach($links as $singleLink) :
+    if($singleLink === PHP_EOL) {
+      continue;
+    }
+    $linkParts = explode(' --- ', $singleLink);
+    list($name, $link, $comment, $time) = $linkParts;
+  ?>
+    <div style="border: 1px solid black;">
+      <p>Nom: <span><?php echo $name?></span></p>
+      <p>Lien: <span><?php echo $link?></span></p>
+      <p>Comment: <span><?php echo $comment?></span></p>
+      <p>Time: <span><?php echo $time?></span></p>
+    </div>
+  <?php
+  endforeach;
+  fclose($readingLinkFile);
 ?>
