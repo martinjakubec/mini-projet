@@ -1,24 +1,52 @@
-<?php 
+<?php
   $page = isset($_GET['page']) ? $_GET['page'] : 'index';
-  $cusine
-  
-  include 'header.php';
-
-  echo '</br>';
-
+  $titre = isset($_GET['titre']) ? $_GET['titre'] : '';
 
   switch($page) {
-    case 'cuisine': 
-      include 'cuisine.php';
+    case 'animation':
+      $titre = "CSS : Animation";
+      $page_include = "animation";
       break;
     case 'index':
-      include 'frontpage.php';
+      $titre = "Accueil";
+      $page_include = 'frontpage';
       break;
-    default: 
-      include '404.php';
+    case 'transformation' :
+      $titre = "CSS : Transformation";
+      $page_include = 'transformation';
       break;
-  }
-  echo '</br>';
+    case 'imgdefond' :
+      $titre = "CSS : Image de fond";
+      $page_include = 'imgdefond';
+      break;
+    case 'liens' :
+      $titre = "Liens utiles";
+      $page_include = 'liens';
+      break;
+    default:
+      $titre = "Oups";
+      $page_include = '404';
+      break;
+    }
 
-  include 'footer.php';
+
+      $page_include = $page_include.".php";
 ?>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <title><?php echo $titre ?></title>
+  <link id = "csslink" href="style1.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+      <?php include 'header.php'; ?>
+  </header>
+  <main>
+    <?php include $page_include; ?>
+  </main>
+  <footer>
+      <?php include 'footer.php'; ?>
+  </footer>
+</body>

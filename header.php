@@ -1,9 +1,7 @@
 <nav>
-    
   <p class="<?php echo ($page == '') ? 'active':''; ?>"><a href="?">Accueil</a>
-  <p class="<?php echo (($page == 'cuisine') && ($cuisine == 'chinoise')) ? 'active':''; ?>"><a href="?page=cuisine&cuisine=chinoise">Cuisine Chinoise</a>
-  <p class="<?php echo ($page == 'cuisine&cuisine=slovaque') ? 'active':''; ?>"><a href="?page=cuisine&cuisine=slovaque">Cuisine Chinoise</a>
-  <p class="<?php echo ($page == 'lien') ? 'active':''; ?>"><a href="?page=lien">Liens utiles</a>
+  <p class="<?php echo ($page == 'animation') ? 'active':''; ?>"><a href="?page=animation">Animation</a>
+  <p class="<?php echo ($page == 'transformation') ? 'active':''; ?>"><a href="?page=transformation">Transformation</a>
+  <p class="<?php echo ($page == 'imgdefond') ? 'active':''; ?>"><a href="?page=imgdefond">Image de fond</a>
+  <p class="<?php echo ($page == 'liens') ? 'active':''; ?>"><a href="?page=liens">Liens utiles</a>
 </nav>
-
-
