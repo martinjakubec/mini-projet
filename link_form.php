@@ -1,4 +1,4 @@
-<form action="formulaire.php" method="POST">
+<form action="" method="POST">
   <label for="name">Votre nom:</label>
   <input type="text" name="name">
   <label for="link">Votre lien:</label>
@@ -19,16 +19,18 @@ if (isset($_POST['name']) && isset($_POST['link'])) {
   $link = htmlentities($link);
   $comment = htmlentities($comment);
 
-  $newTime = time();
-  setcookie('spamprevent', $newTime, 10*60*1000);
 
-  if(!isset($_COOKIE['spamprevent'])) {
+  
     $linkfile = fopen('links.txt', 'a+');
     fwrite($linkfile, "$name --- $link --- $comment --- $newTime" . PHP_EOL);
     fclose($linkfile);
-
-  } else {
-    echo 'dont spam here, plz';
-  }
 }
+?>
+
+<?php 
+  $readingLinkFile = fopen('links.txt', 'r');
+  while(!feof($readingLinkFile)) {
+    $line = fgets($readingLinkFile);
+    echo $line.'</br>';
+  }
 ?>
