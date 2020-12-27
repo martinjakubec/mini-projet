@@ -26,6 +26,7 @@
     default:
       $titre = "Oups";
       $page_include = '404';
+      header("HTTP/1.0 404 Not Found");
       break;
     }
 
@@ -37,7 +38,7 @@
 <head>
   <meta charset="utf-8"/>
   <title><?php echo $titre ?></title>
-  <link id = "csslink" href="style1.css" rel="stylesheet">
+  <link id = "csslink" href="scss/style1/style1.css" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -49,4 +50,5 @@
   <footer>
       <?php include 'footer.php'; ?>
   </footer>
+  <script src="js.js"></script>
 </body>
