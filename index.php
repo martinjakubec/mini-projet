@@ -38,7 +38,7 @@
 <head>
   <meta charset="utf-8"/>
   <title><?php echo $titre ?></title>
-  <link id = "csslink" href="scss/style1/style1.css" rel="stylesheet">
+  <link id = "csslink" href="scss/style1/style1.css?v=<?php echo rand(1,20) ?>" rel="stylesheet">
 </head>
 <body>
   <header>

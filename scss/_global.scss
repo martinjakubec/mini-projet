@@ -1,4 +1,26 @@
+@import './reset';
+@import './fonts';
+
 :root {
   font-size: 10px;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+#menu {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  border: 1px solid red;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}

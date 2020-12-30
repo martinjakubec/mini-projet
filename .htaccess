@@ -1,0 +1,3 @@
+# PREVENTS CSS AND JS CACHING
+EnableMMAP off
+EnableSendfile off
