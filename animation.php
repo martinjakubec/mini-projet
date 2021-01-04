@@ -38,7 +38,7 @@
           <pre>
             div{
               animation-name:demo;
-              animation-duration:2s;
+              animation-duration:5s;
             }
           </pre>
         </dd>
@@ -48,32 +48,227 @@
     <button>Changer de couleur en 5s</button>
   </section>
   <section class="propContenu">
-    <article>Explication Animation-delay</article>
+    <article>La propriété <code>animation-delay</code> définit la temporisation pour démarrer l'animation. La valeur peut être positive et négative.
+      <dl>
+        <dt>Valeur positive N</dt>
+        <dd>L'animation démarre dans un temps de N.
+          <pre>
+            div{
+              animation-name:demo;
+              animation-duration:5s;
+              animation-delay:2s;
+            }
+          </pre>
+        </dd>
+        <dt>Valeur négative -N</dt>
+        <dd>L'animation démarre comme si elle avait déjà fonctionné pour un temps de N.
+          <pre>
+            div{
+              animation-name:demo;
+              animation-duration:5s;
+              animation-delay:-2s;
+            }
+          </pre>
+        </dd>
+      </dl>
+    </article>
     <button>Démarrer dans 2s</button>
-    <button>Démarrer dans 5s</button>
+    <button>Démarrer dans -2s</button>
   </section>
   <section class="propContenu">
-    <article>Explication Animation-iteration-count</article>
+    <article>La proprité <code>animation-iteration-count</code> définit le nombre de fois que l'animation se répète. En la définissant à infinite, l'animation se répète en permanence.
+      <dl>
+        <dt>N fois</dt>
+        <dd>
+          <pre>
+            div{
+              animation-name:demo;
+              animation-duration:5s;
+              animation-iteration-count:3;
+            }
+          </pre>
+        </dd>
+        <dt>infinite</dt>
+        <dd>
+          <pre>
+            div{
+              animation-name:demo;
+              animation-duration:5s;
+              animation-iteration-count:infinite;
+            }
+          </pre>
+        </dd>
+      </dl>
+    </article>
     <button>Répéter 2 fois</button>
-    <button>Répéter 3 fois</button>
+    <button>Répéter en permanence</button>
   </section>
   <section class="propContenu">
-    <article>Explication Animation-direction</article>
+    <article>La propriété <code>animation-direction</code> définit le sens d'animation avec les 4 valeurs suivantes.
+      <dl>
+        <dt>normal</dt>
+        <dd>L'animation se joue comme ce qui est défini dans <code>@keyframes</code>. C'est la valeur par défaut.
+          <pre>
+            div{
+              animation-name:demo;
+              animation-duration:5s;
+              animation-direction:normal;
+            }
+          </pre>
+        </dd>
+        <dt>reverse</dt>
+        <dd>L'animation se joue dans le sens contraire à celui défini.
+          <pre>
+            div{
+              animation-name:demo;
+              animation-duration:5s;
+              animation-direction:reverse;
+            }
+          </pre>
+        </dd>
+        <dt>alternate</dt>
+        <dd>L'animation se joue d'abord au sens normal puis au sens contraire.
+          <pre>
+            div{
+              animation-name:demo;
+              animation-duration:5s;
+              animation-direction:reverse;
+            }
+          </pre>
+        </dd>
+        <dt>alternate-reverse</dt>
+        <dd>L'animation se joue d'abord au sens contraire puis au sens normal.
+          <pre>
+            div{
+              animation-name:demo;
+              animation-duration:5s;
+              animation-direction:alternate-reverse;
+            }
+          </pre>
+        </dd>
+      </dl>
+    </article>
     <button>Reverse</button>
     <button>alternate</button>
     <button>alternate-reverse</button>
   </section>
   <section class="propContenu">
-    <article>Explication Animation-timing-function</article>
+    <article>La propriété <code>animation-timing-function</code> définit la courbe de vitesse de l'animation avec les 6 valeurs suivantes.
+      <dl>
+        <dt>ease</dt>
+        <dd>L'animation démarre lentement, puis s'accélère, et finalement se finit lentement.
+          <pre>
+            div{
+              animation-name:demo;
+              animation-duration:5s;
+              animation-timing-function:ease;
+            }
+          </pre>
+        </dd>
+        <dt>linear</dt>
+        <dd>L'animation se joue toujours à une vitesse constante du début à la fin.
+          <pre>
+            div{
+              animation-name:demo;
+              animation-duration:5s;
+              animation-timing-function:linear;
+            }
+          </pre>
+        </dd>
+        <dt>ease-in</dt>
+        <dd>L'animation démarre lentement.
+          <pre>
+            div{
+              animation-name:demo;
+              animation-duration:5s;
+              animation-timing-function:ease-in;
+            }
+          </pre>
+        </dd>
+        <dt>ease-out</dt>
+        <dd>L'animation se finit lentement.
+          <pre>
+            div{
+              animation-name:demo;
+              animation-duration:5s;
+              animation-timing-function:ease-out;
+            }
+          </pre>
+        </dd>
+        <dt>ease-in-out</dt>
+        <dd>L'animation démarre et se finit lentement.
+          <pre>
+            div{
+              animation-name:demo;
+              animation-duration:5s;
+              animation-timing-function:ease-in-out;
+            }
+          </pre>
+        </dd>
+        <dt>cubic-bezier(n,n,n,n)</dt>
+        <dd>Nous définissons nous-même la vitesse au début, en cours et à la fin, la valeur n est entre 0 et 1.
+          <pre>
+            div{
+              animation-name:demo;
+              animation-duration:5s;
+              animation-timing-function:cubic-bezier(0.5,0.1,1,0.1);
+            }
+          </pre>
+        </dd>
+      </dl>
+    </article>
     <button>Ease</button>
     <button>Linear</button>
     <button>Ease-in</button>
     <button>Ease-out</button>
     <button>Ease-in-out</button>
-    <button>Cubic-bezier</button>
+    <button>Cubic-bezier(0.5,0.1,1,0.1)</button>
   </section>
   <section class="propContenu">
-    <article>Explication Animation-fill-mode</article>
+    <article>La propriété <code>animation-fill-mode</code> décide le style que retient l'élément html au début ou/et à la fin de l'animation. Elle a 4 valeurs suivantes.
+      <dl>
+        <dt>none</dt>
+        <dd>L'élément ne prend aucun style défini dans <code>@keyframes</code>. C'est la valeur par défaut.
+          <pre>
+            div{
+              animation-name:demo;
+              animation-duration:5s;
+              animation-fill-mode:none;
+            }
+          </pre>
+        </dd>
+        <dt>forwards</dt>
+        <dd>L'élément retient le style de fin défini dans <code>@keyframe</code> à la fin de l'animation.
+          <pre>
+            div{
+              animation-name:demo;
+              animation-duration:5s;
+              animation-fill-mode:forwards;
+            }
+          </pre>
+        </dd>
+        <dt>backwards</dt>
+        <dd>L'élément retient le style de départ défini dans <code>@keyframes</code> avant le démarrage de l'animation.
+          <pre>
+            div{
+              animation-name:demo;
+              animation-duration:5s;
+              animation-fill-mode:backwards;
+            }
+          </pre>
+        </dd>
+        <dt>both</dt>
+        <dd>L'élément prend le style de départ avant le démarrage de l'animation et retient le style de fin à la fin de l'animation.
+          <pre>
+            div{
+              animation-name:demo;
+              animation-duration:5s;
+              animation-fill-mode:both;
+            }
+          </pre>
+        </dd>
+      </dl>
+    </article>
     <button>None</button>
     <button>Forwards</button>
     <button>Backwords</button>
