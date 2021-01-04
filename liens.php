@@ -38,9 +38,5 @@ if(file_exists('links.txt')) {
 
 ?>
 
-<?php 
-  var_dump($_ENV);
-?>
-
 
 
