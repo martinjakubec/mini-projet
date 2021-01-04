@@ -38,6 +38,7 @@
   <meta charset="utf-8"/>
   <title><?php echo $titre ?></title>
   <link id = "csslink" href="style1.css" rel="stylesheet">
+  <script src="functions.js"></script>
 </head>
 <body>
   <header>
