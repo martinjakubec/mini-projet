@@ -19,9 +19,9 @@
       $titre = "CSS : Image de fond";
       $page_include = 'imgdefond';
       break;
-    case 'liens' :
+    case 'link_form' :
       $titre = "Liens utiles";
-      $page_include = 'liens';
+      $page_include = 'link_form';
       break;
     default:
       $titre = "Oups";
@@ -39,6 +39,7 @@
   <meta charset="utf-8"/>
   <title><?php echo $titre ?></title>
   <link id = "csslink" href="scss/style1/style1.css" rel="stylesheet">
+  <script src="functions.js"></script>
 </head>
 <body>
   <header>
