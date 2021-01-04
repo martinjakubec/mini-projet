@@ -1,3 +1,3 @@
 <?php 
-  echo 'frontpage';
+  echo '<p>frontpage</p>';
 ?>
