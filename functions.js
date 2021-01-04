@@ -17,9 +17,7 @@ window.onload = function(){
 
     /*Function qui changer la couleur de fond du bouton cliqué*/
     function bgColor(n){
-      for(let i = 0; i<btn.length; i++){
-        btn[i].style.backgroundColor = "yellow";
-      }
+
       btn[n].style.backgroundColor = "orange";
     }
 

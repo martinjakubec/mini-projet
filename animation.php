@@ -1,4 +1,3 @@
-<script src="functions.js"></script>
 <section class="expPropCss">
   <article class="propDescription">
     <header>Description générale de la propriété Animations</header>
@@ -14,7 +13,37 @@
     <p class="btnNav">Animation-fill-mode</p>
   </nav>
   <section class="propContenu">
-    <article>Explication Framework et animation duration</article>
+    <article>
+      <dl>
+        <dt>Keyframes</dt>
+        <dd>La propriété <code>@keyframes</code>, suivi par le nom d'animation, contient à changer. Nous pouvons soit définir les styles de départ et de fin à travers "from" et "to", soit les styles intermédiaires à travers le pourcentage "%".
+          <pre>
+            @keyframes demo{
+              0% {background-color:yellow;}
+              25% {background-color:orange;}
+              50% {background-color:red;}
+              75% {background-color:purple;}
+              100% {background-color:black;}
+            }
+          </pre>
+          Pour faire fonctionner l'animation, il faut l'attacher à un élément html à travers la propriété <code>animation-name</code>.
+          <pre>
+            div{
+              animation-name:demo;
+            }
+          </pre>
+        </dd>
+        <dt>Animation duration</dt>
+        <dd>La proprité <code>animation-duration</code> définit la durée d'action de l'animation, sans laquelle aucunne animation n'aura lieu car sa valeur par défait est 0.
+          <pre>
+            div{
+              animation-name:demo;
+              animation-duration:2s;
+            }
+          </pre>
+        </dd>
+      </dl>
+    </article>
     <button>Changer de couleur en 2s</button>
     <button>Changer de couleur en 5s</button>
   </section>
