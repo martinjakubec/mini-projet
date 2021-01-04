@@ -19,9 +19,9 @@
       $titre = "CSS : Image de fond";
       $page_include = 'imgdefond';
       break;
-    case 'liens' :
+    case 'link_form' :
       $titre = "Liens utiles";
-      $page_include = 'liens';
+      $page_include = 'link_form';
       break;
     default:
       $titre = "Oups";
