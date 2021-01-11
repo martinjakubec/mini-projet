@@ -1,0 +1,33 @@
+.links-list-wrapper {
+  .link-singular {
+    
+    &~.link-singular {
+      border-top: 3px solid green;
+      margin-top: 20px;
+      padding-top: 10px;
+    }
+
+    p {
+      margin-bottom: 10px;
+      font-weight: 600;
+      line-height: 1.5;
+ 
+      span {
+        font-weight: normal;
+      }
+  
+      a {
+        color: green;
+        font-weight: 600;
+  
+        &.underline-link {
+          transition: 0.15s;
+  
+          &::before {
+            bottom: 0px;
+          }
+        }
+      }
+    }
+  }
+}
