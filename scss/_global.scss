@@ -1,5 +1,9 @@
 @import './reset';
 @import './fonts';
+@import './buttons';
+
+@import './menu';
+@import './footer';
 
 :root {
   font-size: 10px;
@@ -13,22 +17,12 @@ body {
   position: relative;
 }
 
-#menu {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  border: 1px solid blue;
-}
-
-
-#footer {
-  border: 1px solid red;
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-
 main {
   border: 2px solid green;
+}
+
+
+.container {
+  max-width: 1000px;
+  margin: auto;
 }

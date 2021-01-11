@@ -53,5 +53,4 @@ $page_include = $page_include . ".php";
   <footer>
     <?php include 'footer.php'; ?>
   </footer>
-  <script src="js.js"></script>
 </body>
