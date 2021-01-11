@@ -31,7 +31,8 @@ window.onload = function () {
     };
   }
 
-  const changeCss = function(name) {
-    document.getElementById('csslink').href.value = `scss/${name}/${name}.css`
-  }
 };
+
+function changeCss(name) {
+  document.getElementById('csslink').href = `scss/${name}/${name}.css?v=${Date.now()}`
+}

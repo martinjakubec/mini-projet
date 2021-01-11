@@ -40,6 +40,7 @@ $page_include = $page_include . ".php";
   <meta charset="utf-8" />
   <title><?php echo $titre ?></title>
   <link id="csslink" href="scss/style1/style1.css?v=<?php echo time() ?>" rel="stylesheet">
+  <script src="functions.js"></script>
 </head>
 
 <body>
@@ -52,5 +53,4 @@ $page_include = $page_include . ".php";
   <footer>
     <?php include 'footer.php'; ?>
   </footer>
-  <script src="js.js"></script>
 </body>
