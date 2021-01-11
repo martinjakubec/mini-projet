@@ -1,0 +1,97 @@
+.formulaire-liens {
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+      align-items: center;
+    
+    &>.input-wrapper {
+      position: relative;
+      width: 200px;
+    }
+  }
+
+  .input-wrapper {
+    margin-bottom: 40px;
+    // margin-top: 30px;
+    label {
+      display: block;
+      text-align: center;
+      margin-bottom: 0;
+    }
+  }
+
+  input[type="text"] {
+    border: none;
+    background: transparent;
+    border-bottom: 3px solid lightgray;
+    outline: none;
+    position: relative;
+    width: 200px;
+    height: 20px;
+    font-size: 1.5rem;
+    padding: 0;
+    margin-top: 10px;
+
+    &+div {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 3px;
+      width: 0;
+      background-color: green;
+      z-index: 2;
+      transition: 0.3s;
+    }
+    
+    &:focus+div, &:hover+div {
+      width: 100%;
+      transition: 0.3s;
+    }
+  }
+
+  label {
+    margin-bottom: 10px;
+  }
+
+  .textarea-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  textarea {
+    width: 300px;
+    // margin-bottom: 20px;
+    outline: none;
+    border: none;
+    border-bottom: 3px solid lightgray;
+    background-color: white;
+
+    &::placeholder {
+      color: darken(lightgray, 20%);
+    }
+
+    &+div {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 3px;
+      width: 0;
+      background-color: green;
+      z-index: 2;
+      transition: 0.3s;
+    }
+    
+    &:focus+div, &:hover+div {
+      width: 100%;
+      transition: 0.3s;
+    }
+  }
+
+  button {
+    margin-bottom: 20px;
+  }
+}

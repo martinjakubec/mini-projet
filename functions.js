@@ -31,8 +31,15 @@ window.onload = function () {
     };
   }
 
+  // s'il y a une 
+  (function(){
+    document.getElementById('csslink').href = localStorage.getItem('css');
+  })()
+
 };
 
 function changeCss(name) {
-  document.getElementById('csslink').href = `scss/${name}/${name}.css?v=${Date.now()}`
+  const link = `scss/${name}/${name}.css?v=${Date.now()}`;
+  document.getElementById('csslink').href = link;
+  localStorage.setItem('css', link);
 }

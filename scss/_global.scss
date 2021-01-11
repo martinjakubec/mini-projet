@@ -4,6 +4,8 @@
 
 @import './menu';
 @import './footer';
+@import './link-form';
+@import './links';
 
 :root {
   font-size: 10px;
@@ -17,12 +19,13 @@ body {
   position: relative;
 }
 
-main {
-  border: 2px solid green;
-}
-
 
 .container {
   max-width: 1000px;
   margin: auto;
+}
+
+h1 {
+  text-align: center;
+  font-weight: bold;
 }
