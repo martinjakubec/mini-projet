@@ -6,7 +6,7 @@ require_once 'link_form.php';
 
 <div class="links-list-wrapper container">
 <?php
-if (file_exists('links.txt')) {
+if (file_exists('links.txt') && filesize('links.txt') !== 0) {
   $readingLinkFile = fopen('links.txt', 'r');
   $links = fread($readingLinkFile, filesize('links.txt') === 0 ? 1 : filesize('links.txt'));
   $links = explode('ENDOFENTRY', $links);
@@ -24,7 +24,9 @@ if (file_exists('links.txt')) {
                                 echo 'http://' . $link;
                               }
                               ?>"><?php echo $link ?></a></span></p>
+      <?php if($comment !== '') :?>
       <p>Commentaire: <span><?php echo $comment ?></span></p>
+      <?php endif;?>
       <p>Date: <span><?php echo date('d/m/Y', $time) ?></span></p>
     </div>
   <?php
@@ -32,8 +34,8 @@ if (file_exists('links.txt')) {
   fclose($readingLinkFile);
 } else {
   ?>
-  <div style="border: 1px solid black;">
-    <p>Pas de lien pour l'instant</p>
+  <div class="no-link-found">
+    <p>Aucun lien n'a été ajouté encore, n'hésitez pas et soyez le premier à le faire!</p>
   </div>
 <?php
 }

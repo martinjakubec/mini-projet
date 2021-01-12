@@ -1,7 +1,5 @@
 #menu {
   width: 100%;
-  // border: 1px solid blue;
-  // background-color: white;
   margin-bottom: 50px;
   border-bottom: 1px solid black;
   
@@ -19,5 +17,46 @@
 
   a {
     position: relative;
+  }
+
+  @media screen and (max-width: 599px) {
+    position: fixed;
+    height: 100%;
+    width: 300px;
+    top: 0;
+    right: -300px;
+    border: 1px solid red;
+    background-color: white;
+    z-index: 99;
+    transition: 0.5s;
+    
+
+    div {
+      display: flex;
+      flex-direction: column;  
+    }
+  }
+
+
+}
+
+#mobile-header {
+  display: none;
+  height: 50px;
+  text-align: right;
+  border-bottom: 1px solid black;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 20px;
+  
+  @media screen and (max-width: 599px) {
+    // display: block;
+    display: flex;
+  }
+
+  #menu-toggle {
+    z-index: 100;
+    position: relative;
+    cursor: pointer;
   }
 }
