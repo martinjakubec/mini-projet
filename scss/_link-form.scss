@@ -68,7 +68,7 @@
     outline: none;
     border: none;
     border-bottom: 3px solid lightgray;
-    background-color: white;
+    background-color: transparent;
 
     &::placeholder {
       color: darken(lightgray, 20%);

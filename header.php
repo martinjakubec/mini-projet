@@ -1,3 +1,6 @@
+<nav id="mobile-header">
+<p id="menu-toggle" class="underline-link">Menu</p>
+</nav>
 <nav id="menu">
   <div class="container">
     <p><a class="<?php echo ($page == '') ? 'active' : ''; ?> underline-link" href="?">Accueil</a>

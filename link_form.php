@@ -12,7 +12,7 @@
     </div>
     <div class="textarea-wrapper">
       <label for="commment">Commentaire:</label>
-      <textarea name="comment" cols="30" rows="10" placeholder="Pourquoi trouvez-vous que votre lien est util ? (max. 200 caractères)" maxlength="200"></textarea>
+      <textarea name="comment" cols="30" rows="5" placeholder="Pourquoi trouvez-vous que votre lien est util ? (max. 200 caractères)" maxlength="200"></textarea>
       <div></div>
     </div>
     <button>Envoyer</button>
