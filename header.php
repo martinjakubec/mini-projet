@@ -1,7 +1,12 @@
-<nav id="menu" > 
-  <p class="<?php echo ($page == '') ? 'active':''; ?>"><a class="underline-link" href="?">Accueil</a>
-  <p class="<?php echo ($page == 'animation') ? 'active':''; ?>"><a class="underline-link" href="?page=animation">Animation</a>
-  <p class="<?php echo ($page == 'transformation') ? 'active':''; ?>"><a class="underline-link" href="?page=transformation">Transformation</a>
-  <p class="<?php echo ($page == 'imgdefond') ? 'active':''; ?>"><a class="underline-link" href="?page=imgdefond">Image de fond</a>
-  <p class="<?php echo ($page == 'link_form') ? 'active':''; ?>"><a class="underline-link" href="?page=liens">Liens utiles</a>
+<nav id="mobile-header">
+<p id="menu-toggle" class="underline-link">Menu</p>
+</nav>
+<nav id="menu">
+  <div class="container">
+    <p><a class="<?php echo ($page == '') ? 'active' : ''; ?> underline-link" href="?">Accueil</a>
+    <p><a class="<?php echo ($page == 'animation') ? 'active' : ''; ?> underline-link" href="?page=animation">Animation</a>
+    <p><a class="<?php echo ($page == 'transformation') ? 'active' : ''; ?> underline-link" href="?page=transformation">Transformation</a>
+    <p><a class="<?php echo ($page == 'imgdefond') ? 'active' : ''; ?> underline-link" href="?page=imgdefond">Image de fond</a>
+    <p><a class="<?php echo ($page == 'liens') ? 'active' : ''; ?> underline-link" href="?page=liens">Liens utiles</a>
+  </div>
 </nav>
