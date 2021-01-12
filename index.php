@@ -47,7 +47,7 @@ $page_include = $page_include . ".php";
   <header>
     <?php include 'header.php'; ?>
   </header>
-  <main>
+  <main class="container">
     <?php include $page_include; ?>
   </main>
   <footer>

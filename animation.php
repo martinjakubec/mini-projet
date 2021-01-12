@@ -1,10 +1,10 @@
 <section class="expPropCss">
   <article class="propDescription">
-    <header>Description générale de la propriété Animations</header>
+    <header><h1>Description générale de la propriété Animations</h1></header>
     <p>La propriété animation permet de changer graduellement le style css d'un élément html sans faire recours à Javascript. Avec animation, il est possible de changer autant de style et autant de fois que possible. Pour utiliser CSS Animation, il est indispensable d'appliquer <code>@keyframe</code> pour définir le style de départ et le style de fin, et <code>animation-duration</code> pour démarrer l'animation. Cliquez les boutons suivants pour voir les détails de différentes propriétés Animation ainsi que leur démonstration.
     </p>
   </article>
-  <nav>
+  <nav class="subnav">
     <p class="btnNav">Keyframe et animation-duration</p>
     <p class="btnNav">Animation-delay</p>
     <p class="btnNav">Animation-iteration-count</p>
