@@ -17,30 +17,36 @@
       <dl>
         <dt>Keyframes</dt>
         <dd>La propriété <code>@keyframes</code>, suivi par le nom d'animation, contient à changer. Nous pouvons soit définir les styles de départ et de fin à travers "from" et "to", soit les styles intermédiaires à travers le pourcentage "%".
-          <pre>
-            @keyframes demo{
-              0% {background-color:yellow;}
-              25% {background-color:orange;}
-              50% {background-color:red;}
-              75% {background-color:purple;}
-              100% {background-color:black;}
-            }
-          </pre>
+          <code>
+            <pre>
+              @keyframes demo{
+                0% {background-color:yellow;}
+                25% {background-color:orange;}
+                50% {background-color:red;}
+                75% {background-color:purple;}
+                100% {background-color:black;}
+              }
+            </pre>
+          </code>
           Pour faire fonctionner l'animation, il faut l'attacher à un élément html à travers la propriété <code>animation-name</code>.
-          <pre>
-            .demo{
-              animation-name:demo;
-            }
-          </pre>
+          <code>
+            <pre>
+              .demo{
+                animation-name:demo;
+              }
+            </pre>
+          </code>
         </dd>
         <dt>Animation duration</dt>
         <dd>La proprité <code>animation-duration</code> définit la durée d'action de l'animation, sans laquelle aucunne animation n'aura lieu car sa valeur par défait est 0.
-          <pre>
-            .demo{
-              animation-name:demo;
-              animation-duration:5s;
-            }
-          </pre>
+          <code>
+            <pre>
+              .demo{
+                animation-name:demo;
+                animation-duration:5s;
+              }
+            </pre>
+          </code>
         </dd>
       </dl>
     </article>
@@ -52,23 +58,27 @@
       <dl>
         <dt>Valeur positive N</dt>
         <dd>L'animation démarre dans un temps de N.
-          <pre>
-            .demo{
-              animation-name:demo;
-              animation-duration:5s;
-              animation-delay:2s;
-            }
-          </pre>
+          <code>
+            <pre>
+              .demo{
+                animation-name:demo;
+                animation-duration:5s;
+                animation-delay:2s;
+              }
+            </pre>
+          </code>
         </dd>
         <dt>Valeur négative -N</dt>
         <dd>L'animation démarre comme si elle avait déjà fonctionné pour un temps de N.
-          <pre>
-            .demo{
-              animation-name:demo;
-              animation-duration:5s;
-              animation-delay:-2s;
-            }
-          </pre>
+          <code>
+            <pre>
+              .demo{
+                animation-name:demo;
+                animation-duration:5s;
+                animation-delay:-2s;
+              }
+            </pre>
+          </code>
         </dd>
       </dl>
     </article>
@@ -80,23 +90,27 @@
       <dl>
         <dt>N fois</dt>
         <dd>
-          <pre>
-            .demo{
-              animation-name:demo;
-              animation-duration:5s;
-              animation-iteration-count:3;
-            }
-          </pre>
+          <code>
+            <pre>
+              .demo{
+                animation-name:demo;
+                animation-duration:5s;
+                animation-iteration-count:3;
+              }
+            </pre>
+          </code>
         </dd>
         <dt>infinite</dt>
         <dd>
-          <pre>
-            .demo{
-              animation-name:demo;
-              animation-duration:5s;
-              animation-iteration-count:infinite;
-            }
-          </pre>
+          <code>
+            <pre>
+              .demo{
+                animation-name:demo;
+                animation-duration:5s;
+                animation-iteration-count:infinite;
+              }
+            </pre>
+          </code>
         </dd>
       </dl>
     </article>
@@ -108,43 +122,51 @@
       <dl>
         <dt>normal</dt>
         <dd>L'animation se joue comme ce qui est défini dans <code>@keyframes</code>. C'est la valeur par défaut.
-          <pre>
-            .demo{
-              animation-name:demo;
-              animation-duration:5s;
-              animation-direction:normal;
-            }
-          </pre>
+          <code>
+            <pre>
+              .demo{
+                animation-name:demo;
+                animation-duration:5s;
+                animation-direction:normal;
+              }
+            </pre>
+          </code>
         </dd>
         <dt>reverse</dt>
         <dd>L'animation se joue dans le sens contraire à celui défini.
-          <pre>
-            .demo{
-              animation-name:demo;
-              animation-duration:5s;
-              animation-direction:reverse;
-            }
-          </pre>
+          <code>
+            <pre>
+              .demo{
+                animation-name:demo;
+                animation-duration:5s;
+                animation-direction:reverse;
+              }
+            </pre>
+          </code>
         </dd>
         <dt>alternate</dt>
         <dd>L'animation se joue d'abord au sens normal puis au sens contraire.
-          <pre>
-            .demo{
-              animation-name:demo;
-              animation-duration:5s;
-              animation-direction:reverse;
-            }
-          </pre>
+          <code>
+            <pre>
+              .demo{
+                animation-name:demo;
+                animation-duration:5s;
+                animation-direction:reverse;
+              }
+            </pre>
+          </code>
         </dd>
         <dt>alternate-reverse</dt>
         <dd>L'animation se joue d'abord au sens contraire puis au sens normal.
-          <pre>
-            .demo{
-              animation-name:demo;
-              animation-duration:5s;
-              animation-direction:alternate-reverse;
-            }
-          </pre>
+          <code>
+            <pre>
+              .demo{
+                animation-name:demo;
+                animation-duration:5s;
+                animation-direction:alternate-reverse;
+              }
+            </pre>
+          </code>
         </dd>
       </dl>
     </article>
@@ -157,63 +179,75 @@
       <dl>
         <dt>ease</dt>
         <dd>L'animation démarre lentement, puis s'accélère, et finalement se finit lentement.
-          <pre>
-            .demo{
-              animation-name:demo;
-              animation-duration:5s;
-              animation-timing-function:ease;
-            }
-          </pre>
+          <code>
+            <pre>
+              .demo{
+                animation-name:demo;
+                animation-duration:5s;
+                animation-timing-function:ease;
+              }
+            </pre>
+          </code>
         </dd>
         <dt>linear</dt>
         <dd>L'animation se joue toujours à une vitesse constante du début à la fin.
-          <pre>
-            .demo{
-              animation-name:demo;
-              animation-duration:5s;
-              animation-timing-function:linear;
-            }
-          </pre>
+          <code>
+            <pre>
+              .demo{
+                animation-name:demo;
+                animation-duration:5s;
+                animation-timing-function:linear;
+              }
+            </pre>
+          </code>
         </dd>
         <dt>ease-in</dt>
         <dd>L'animation démarre lentement.
-          <pre>
-            .demo{
-              animation-name:demo;
-              animation-duration:5s;
-              animation-timing-function:ease-in;
-            }
-          </pre>
+          <code>
+            <pre>
+              .demo{
+                animation-name:demo;
+                animation-duration:5s;
+                animation-timing-function:ease-in;
+              }
+            </pre>
+          </code>
         </dd>
         <dt>ease-out</dt>
         <dd>L'animation se finit lentement.
-          <pre>
-            .demo{
-              animation-name:demo;
-              animation-duration:5s;
-              animation-timing-function:ease-out;
-            }
-          </pre>
+          <code>
+            <pre>
+              .demo{
+                animation-name:demo;
+                animation-duration:5s;
+                animation-timing-function:ease-out;
+              }
+            </pre>
+          </code>
         </dd>
         <dt>ease-in-out</dt>
         <dd>L'animation démarre et se finit lentement.
-          <pre>
-            .demo{
-              animation-name:demo;
-              animation-duration:5s;
-              animation-timing-function:ease-in-out;
-            }
-          </pre>
+          <code>
+            <pre>
+              .demo{
+                animation-name:demo;
+                animation-duration:5s;
+                animation-timing-function:ease-in-out;
+              }
+            </pre>
+          </code>
         </dd>
         <dt>cubic-bezier(n,n,n,n)</dt>
         <dd>Nous définissons nous-même la vitesse au début, en cours et à la fin, la valeur n est entre 0 et 1.
-          <pre>
-            .demo{
-              animation-name:demo;
-              animation-duration:5s;
-              animation-timing-function:cubic-bezier(0.5,0.1,1,0.1);
-            }
-          </pre>
+          <code>
+            <pre>
+              .demo{
+                animation-name:demo;
+                animation-duration:5s;
+                animation-timing-function:cubic-bezier(0.5,0.1,1,0.1);
+              }
+            </pre>
+          </code>
         </dd>
       </dl>
     </article>
@@ -229,43 +263,51 @@
       <dl>
         <dt>none</dt>
         <dd>L'élément ne prend aucun style défini dans <code>@keyframes</code>. C'est la valeur par défaut.
-          <pre>
-            .demo{
-              animation-name:demo;
-              animation-duration:5s;
-              animation-fill-mode:none;
-            }
-          </pre>
+          <code>
+            <pre>
+              .demo{
+                animation-name:demo;
+                animation-duration:5s;
+                animation-fill-mode:none;
+              }
+            </pre>
+          </code>
         </dd>
         <dt>forwards</dt>
         <dd>L'élément retient le style de fin défini dans <code>@keyframe</code> à la fin de l'animation.
-          <pre>
-            .demo{
-              animation-name:demo;
-              animation-duration:5s;
-              animation-fill-mode:forwards;
-            }
-          </pre>
+          <code>
+            <pre>
+              .demo{
+                animation-name:demo;
+                animation-duration:5s;
+                animation-fill-mode:forwards;
+              }
+            </pre>
+          </code>
         </dd>
         <dt>backwards</dt>
         <dd>L'élément retient le style de départ défini dans <code>@keyframes</code> avant le démarrage de l'animation.
-          <pre>
-            .demo{
-              animation-name:demo;
-              animation-duration:5s;
-              animation-fill-mode:backwards;
-            }
-          </pre>
+          <code>
+            <pre>
+              .demo{
+                animation-name:demo;
+                animation-duration:5s;
+                animation-fill-mode:backwards;
+              }
+            </pre>
+          </code>
         </dd>
         <dt>both</dt>
         <dd>L'élément prend le style de départ avant le démarrage de l'animation et retient le style de fin à la fin de l'animation.
-          <pre>
-            .demo{
-              animation-name:demo;
-              animation-duration:5s;
-              animation-fill-mode:both;
-            }
-          </pre>
+          <code>
+            <pre>
+              .demo{
+                animation-name:demo;
+                animation-duration:5s;
+                animation-fill-mode:both;
+              }
+            </pre>
+          </code>
         </dd>
       </dl>
     </article>
