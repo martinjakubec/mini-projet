@@ -134,6 +134,6 @@
     <button>Elargir sur l'axe z</button>
   </section>
   <section class="demo">
-    <div id="demoAnmation"></div>
+    <div id="demoTransform"></div>
   </section>
 </section>

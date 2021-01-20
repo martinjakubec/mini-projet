@@ -1,0 +1,20 @@
+#demoAnimation{
+  width:200px;
+  height:200px;
+  background-color:black;
+  animation-iteration-count:1;
+  animation-duration:3s;
+  animation-delay:0s;
+  animation-direction:normal;
+  animation-timing-function:linear;
+  animation-fill-mode: none;
+  position:absolute;
+}
+
+@keyframes color{
+  0% {background-color:lightblue;top:0px;left:0px;}
+  25% {background-color:lightgreen;top:0px;left:50px;}
+  50% {background-color:pink;top:50px;left:50px;}
+  75% {background-color:yellow;top:50px;left:0px;}
+  100% {background-color:grey;top:0px;left:0px;}
+}

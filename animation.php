@@ -50,8 +50,8 @@
         </dd>
       </dl>
     </article>
-    <button>Changer de couleur en 2s</button>
-    <button>Changer de couleur en 5s</button>
+    <button onclick='changeDuration("2s")'>Changer de couleur en 2s</button>
+    <button onclick='changeDuration("3s")'>Changer de couleur en 3s</button>
   </section>
   <section class="propContenu">
     <article>La propriété <code>animation-delay</code> définit la temporisation pour démarrer l'animation. La valeur peut être positive et négative.
@@ -82,8 +82,8 @@
         </dd>
       </dl>
     </article>
-    <button>Démarrer dans 2s</button>
-    <button>Démarrer dans -2s</button>
+    <button onclick='changeDelay("2s")'>Démarrer dans 2s</button>
+    <button onclick='changeDelay("-2s")'>Démarrer dans -2s</button>
   </section>
   <section class="propContenu">
     <article>La proprité <code>animation-iteration-count</code> définit le nombre de fois que l'animation se répète. En la définissant à infinite, l'animation se répète en permanence.
@@ -114,8 +114,8 @@
         </dd>
       </dl>
     </article>
-    <button>Répéter 2 fois</button>
-    <button>Répéter en permanence</button>
+    <button onclick="changeCount(2)">Répéter 2 fois</button>
+    <button onclick='changeCount("infinite")'>Répéter en permanence</button>
   </section>
   <section class="propContenu">
     <article>La propriété <code>animation-direction</code> définit le sens d'animation avec les 4 valeurs suivantes.
@@ -170,9 +170,9 @@
         </dd>
       </dl>
     </article>
-    <button>Reverse</button>
-    <button>alternate</button>
-    <button>alternate-reverse</button>
+    <button onclick='changeDirection("reverse")'>Reverse</button>
+    <button onclick='changeDirection("alternate")'>alternate</button>
+    <button onclick='changeDirection("alternate-reverse")'>alternate-reverse</button>
   </section>
   <section class="propContenu">
     <article>La propriété <code>animation-timing-function</code> définit la courbe de vitesse de l'animation avec les 6 valeurs suivantes.
@@ -251,12 +251,12 @@
         </dd>
       </dl>
     </article>
-    <button>Ease</button>
-    <button>Linear</button>
-    <button>Ease-in</button>
-    <button>Ease-out</button>
-    <button>Ease-in-out</button>
-    <button>Cubic-bezier(0.5,0.1,1,0.1)</button>
+    <button onclick='changeTiming("ease")'>Ease</button>
+    <button onclick='changeTiming("linear")'>Linear</button>
+    <button onclick='changeTiming("ease-in")'>Ease-in</button>
+    <button onclick='changeTiming("ease-out")'>Ease-out</button>
+    <button onclick='changeTiming("ease-in-out")'>Ease-in-out</button>
+    <button onclick='changeTiming("cubic-bezier(0.5,0.1,1,0.1)")'>Cubic-bezier(0.5,0.1,1,0.1)</button>
   </section>
   <section class="propContenu">
     <article>La propriété <code>animation-fill-mode</code> décide le style que retient l'élément html au début ou/et à la fin de l'animation. Elle a 4 valeurs suivantes.
@@ -311,12 +311,12 @@
         </dd>
       </dl>
     </article>
-    <button>None</button>
-    <button>Forwards</button>
-    <button>Backwords</button>
-    <button>Both</button>
+    <button onclick='changeFill("none")'>None</button>
+    <button onclick='changeFill("forwards")'>Forwards</button>
+    <button onclick='changeFill("backwards")'>Backwards</button>
+    <button onclick='changeFill("both")'>Both</button>
   </section>
   <section class="demo">
-    <div id="demoAnmation"></div>
+    <div id="demoAnimation"></div>
   </section>
 </section>

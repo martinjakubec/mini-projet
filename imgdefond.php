@@ -278,6 +278,6 @@
     <button>contain</button>
   </section>
   <section class="demo">
-    <div id="demoAnmation"></div>
+    <div id="demoBgimg"></div>
   </section>
 </section>
