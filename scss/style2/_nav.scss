@@ -1,4 +1,4 @@
-.underline-link {
+.menu-button {
   position: relative;
   
   &.active {
@@ -10,11 +10,11 @@
   }
 }
 
-.underline-link:hover, .underline-link:focus {
+.menu-button:hover, .menu-button:focus {
   color: $main-color;
 }
 
-.underline-link:before {
+.menu-button:before {
   content: '';
   display: block;
   position: absolute;
@@ -26,15 +26,9 @@
   transition: 0.3s;
 }
 
-.underline-link:hover, .underline-link:focus {
+.menu-button:hover, .menu-button:focus {
   &::before {
     width: 100%;
     transition: 0.3s;
   }
-}
-.btnNav {
-  background-color:yellow;
-}
-.btnNav:first-child{
-  background-color:orange;
 }
