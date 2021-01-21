@@ -67,18 +67,18 @@
           <code>
             <pre>
               .demo{
-                background-image:repeating-radial-gradient(grenn 10px, blue 20px);
+                background-image:repeating-radial-gradient(green 10%, blue 20%);
               }
             </pre>
           </code>
         </dd>
       </dl>
     </article>
-    <button>Image de fond</button>
-    <button>Dégradé linéaire</button>
-    <button>Dégradé linéaire répété</button>
-    <button>Dégradé radial</button>
-    <button>Dégradé radial répété</button>
+    <button onclick='changeClass("imgfond")'>Image de fond</button>
+    <button onclick='changeClass("degradelineaire")'>Dégradé linéaire</button>
+    <button onclick='changeClass("degradelineairerepeat")'>Dégradé linéaire répété</button>
+    <button onclick='changeClass("degraderadial")'>Dégradé radial</button>
+    <button onclick='changeClass("degraderadialrepeat")'>Dégradé radial répété</button>
   </section>
   <section class="propContenu">
     <article>
@@ -152,12 +152,12 @@
         </dd>
       </dl>
     </article>
-    <button>No-Repeat</button>
-    <button>Repeat</button>
-    <button>Repeat-x</button>
-    <button>Repeat-y</button>
-    <button>Space</button>
-    <button>Round</button>
+    <button onclick='changeClass("norepeat")'>No-Repeat</button>
+    <button onclick='changeClass("repeat")'>Repeat</button>
+    <button onclick='changeClass("repeatx")'>Repeat-x</button>
+    <button onclick='changeClass("repeaty")'>Repeat-y</button>
+    <button onclick='changeClass("space")'>Space</button>
+    <button onclick='changeClass("round")'>Round</button>
   </section>
   <section class="propContenu">
     <article>
@@ -201,9 +201,9 @@
         </dd>
       </dl>
     </article>
-    <button>Center</button>
-    <button>25% 75%</button>
-    <button>25px 75px</button>
+    <button onclick='changeClass("center")'>Center</button>
+    <button onclick='changeClass("pourcentage")'>25% 75%</button>
+    <button onclick='changeClass("unite")'>25px 75px</button>
   </section>
   <section class="propContenu">
     <article>
@@ -265,19 +265,19 @@
             .demo{
               background-image:url("image.jpg");
               background-repeat:no-repeat;
-              background-size:cover;
+              background-size:contain;
           }
           </pre>
         </code>
       </dd>
     </article>
-    <button>auto</button>
-    <button>100px 50px</button>
-    <button>50% 50%</button>
-    <button>cover</button>
-    <button>contain</button>
+    <button onclick='changeClass("auto")'>auto</button>
+    <button onclick='changeClass("width300")'>300px 200px</button>
+    <button onclick='changeClass("demi")'>50% 50%</button>
+    <button onclick='changeClass("cover")'>cover</button>
+    <button onclick='changeClass("contain")'>contain</button>
   </section>
   <section class="demo">
-    <div id="demoBgimg"></div>
+    <div id="demoBgimg"><p>Image de fond</p></div>
   </section>
 </section>

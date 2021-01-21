@@ -3,6 +3,7 @@
   var demoAnimation = document.getElementById("demoAnimation");
   var demo2d = document.getElementById("demo2d");
   var cube = document.getElementById("demoTransform");
+  var image = document.getElementById("demoBgimg");
 
   /*Afficher seulement l'explication de la 1ère propriété*/
   for (let i = 1; i < block.length; i++) {
@@ -114,8 +115,10 @@ function changeCss(name) {
       if(n=="backwards" || n=="both"){
         demoAnimation.style.animationDelay="2s";
         setTimeout(reset,5000);
+      }else if(n=="forwards"){
+        setTimeout(reset,3500);
       }else{
-        setTimeout(reset,4000);
+        setTimeout(reset,3000)
       }
     }
 
@@ -145,4 +148,9 @@ function changeCss(name) {
     function changeCubeFrames(name){
       openCube()
       cube.style.animationName = name;
+    }
+
+    //change classname for demo backgroundimage
+    function changeClass(name){
+      image.className = name;
     }

@@ -1,0 +1,93 @@
+#demoBgimg{
+  width:1000px;
+  height:300px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  p{
+    font-size:30px;
+    font-weight: bold;
+    color: white;
+  }
+}
+.imgfond{
+  background-image:url("../../image/snow.jpg");
+  background-repeat:no-repeat;
+  background-size: cover;
+}
+.degradelineaire{
+  background-image:linear-gradient(green,blue);
+}
+.degradelineairerepeat{
+  background-image: repeating-linear-gradient(45deg,green 10%,blue 20%);
+}
+.degraderadial{
+  background-image: radial-gradient(green,blue);
+}
+.degraderadialrepeat{
+  background-image: repeating-radial-gradient(green 10%, blue 20%);
+}
+.norepeat{
+  background-image:url("../../image/guitar.jpg");
+  background-repeat: no-repeat;
+}
+.repeat{
+  background-image:url("../../image/guitar.jpg");
+  background-repeat: repeat;
+}
+.repeatx{
+  background-image:url("../../image/guitar.jpg");
+  background-repeat: repeat-x;
+}
+.repeaty{
+  background-image:url("../../image/guitar.jpg");
+  background-repeat: repeat-y;
+}
+.space{
+  background-image:url("../../image/guitar.jpg");
+  background-repeat: space;
+}
+.round{
+  background-image:url("../../image/guitar.jpg");
+  background-repeat: round;
+}
+.center{
+  background-image:url("../../image/guitar.jpg");
+  background-repeat: no-repeat;
+  background-position:center center;
+}
+.pourcentage{
+  background-image:url("../../image/guitar.jpg");
+  background-repeat: no-repeat;
+  background-position: 25% 75%;
+}
+.unite{
+  background-image:url("../../image/guitar.jpg");
+  background-repeat: no-repeat;
+  background-position: 25px 75px;
+}
+.auto{
+  background-image:url("../../image/snow.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+.width300{
+    background-image:url("../../image/snow.jpg");
+    background-repeat: no-repeat;
+    background-size: 300px 200px;
+}
+.demi{
+  background-image:url("../../image/snow.jpg");
+  background-repeat: no-repeat;
+  background-size: 50% 50%;
+}
+.cover{
+  background-image:url("../../image/snow.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.contain{
+  background-image:url("../../image/snow.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
