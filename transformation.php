@@ -30,9 +30,9 @@
       </pre>
   </code>
   </article>
-    <button>Déplacer sur l'axe X et Y</button>
-    <button>Déplacer sur l'axe X</button>
-    <button>Déplacer sur l'axe Y</button>
+    <button onclick='changeDemoFrames("translate")'>Déplacer sur l'axe X et Y</button>
+    <button onclick='changeDemoFrames("translatex")'>Déplacer sur l'axe X</button>
+    <button onclick='changeDemoFrames("translatey")'>Déplacer sur l'axe Y</button>
   </section>
   <section class="propContenu">
     <article>
@@ -49,8 +49,8 @@
         </pre>
       </code>
     </article>
-    <button>Pivoter à droite</button>
-    <button>Pivoter à gauche</button>
+    <button onclick='changeDemoFrames("rotater")'>Pivoter à droite</button>
+    <button onclick='changeDemoFrames("rotatel")'>Pivoter à gauche</button>
   </section>
   <section class="propContenu">
     <article>
@@ -71,9 +71,9 @@
         </pre>
       </code>
     </article>
-    <button>2 fois plus grand</button>
-    <button>2 fois moins long</button>
-    <button>2 fois plus haut</button>
+    <button onclick='changeDemoFrames("scaleg")'>2 fois plus grand</button>
+    <button onclick='changeDemoFrames("scalew")'>2 fois moins long</button>
+    <button onclick='changeDemoFrames("scaleh")'>2 fois plus haut</button>
   </section>
   <section class="propContenu">
     <article>
@@ -94,9 +94,9 @@
         </pre>
       </code>
     </article>
-    <button>S'incliner sur l'axe X et Y</button>
-    <button>S'incliner sur l'axe X</button>
-    <button>S'incliner sur l'axe Y</button>
+    <button onclick='changeDemoFrames("skew")'>S'incliner sur l'axe X et Y</button>
+    <button onclick='changeDemoFrames("skewx")'>S'incliner sur l'axe X</button>
+    <button onclick='changeDemoFrames("skewy")'>S'incliner sur l'axe Y</button>
   </section>
   <section class="propContenu">
     <article>
@@ -129,11 +129,19 @@
         <dd>Cette propriété définit la position de l'élément transformé à la fin de transformation.</dd>
       </dl>
     </article>
-    <button>Déplacer sur l'axe z</button>
-    <button>Pivoter sur l'axe z</button>
-    <button>Elargir sur l'axe z</button>
+    <button onclick='changeCubeFrames("translate3")'>Déplacer sur l'axe z</button>
+    <button onclick='changeCubeFrames("rotate3")'>Pivoter sur l'axe z</button>
+    <button onclick='changeCubeFrames("scale3")'>Elargir sur l'axe z</button>
   </section>
   <section class="demo">
-    <div id="demoTransform"></div>
+    <div id="demo2d"></div>
+    <div id="demoTransform">
+      <div class="front">front</div>
+      <div class="back">back</div>
+      <div class="left">left</div>
+      <div class="right">right</div>
+      <div class="top">top</div>
+      <div class="bottom">bottom</div>
+    </div>
   </section>
 </section>

@@ -1,0 +1,105 @@
+#demo2d{
+  width:200px;
+  height:200px;
+  background-color:black;
+  animation-duration:3s;
+}
+
+#demoTransform{
+  width:200px;
+  position:relative;
+  transform-style: preserve-3d;
+  display:none;
+  animation-duration:3s;
+
+  div{
+    width:200px;
+    height:200px;
+    position:absolute;
+    opacity:0.5;
+    text-align:center;
+    font-size:30px;
+    padding:10px;
+  }
+  .front{
+    transform:translateZ(100px);
+    background-color:red;
+  }
+  .back{
+    transform:translateZ(-100px) rotateY(180deg);
+    background-color:purple;
+  }
+  .left{
+    transform:translateX(-100px) rotateY(-90deg);
+    background-color: green;
+  }
+  .right{
+    transform:translateX(100px) rotateY(90deg);
+    background-color: gold;
+  }
+  .top{
+    transform:translateY(-100px) rotateX(90deg);
+    background-color: yellow;
+  }
+  .bottom{
+    transform:translateY(100px) rotateX(-90deg);
+    background-color:pink;
+  }
+}
+
+@keyframes translate{
+  from {transform:translate(0);}
+  to {transform:translate(50px, 50px);}
+}
+@keyframes translatex{
+  from {transform:translateX(0);}
+  to {transform: translateX(50px);}
+}
+@keyframes translatey{
+  from {transform:translateY(0);}
+  to {transform: translateY(50px);}
+}
+@keyframes rotater{
+  from {transform:rotate(0);}
+  to {transform:rotate(360deg);}
+}
+@keyframes rotatel{
+  from {transform:rotate(0);}
+  to {transform:rotate(-360deg);}
+}
+@keyframes scaleg{
+  from {transform:scale(1,1);}
+  to {transform:scale(2,2);}
+}
+@keyframes scalew{
+  from {transform:scaleX(1);}
+  to {transform:scaleX(0.5);}
+}
+@keyframes scaleh{
+  from {transform:scaleY(1);}
+  to {transform:scaleY(2);}
+}
+@keyframes skew{
+  from {transform:skew(0)}
+  to {transform:skew(45deg,45deg)}
+}
+@keyframes skewx{
+  from {transform:skewX(0);}
+  to {transform:skewX(45deg);}
+}
+@keyframes skewy{
+  from {transform:skewY(0);}
+  to {transform:skewY(45deg);}
+}
+@keyframes translate3 {
+  from {transform: translateZ(0);}
+  to {transform: translateZ(50px);}
+}
+@keyframes rotate3 {
+  from {transform: rotateY(0);}
+  to {transform: rotateY(-360deg);}
+}
+@keyframes scale3 {
+  from {transform: scaleZ(1);}
+  to {transform: scaleZ(3);}
+}

@@ -1,6 +1,8 @@
   var btn = document.getElementsByClassName('btnNav');
   var block = document.getElementsByClassName('propContenu');
   var demoAnimation = document.getElementById("demoAnimation");
+  var demo2d = document.getElementById("demo2d");
+  var cube = document.getElementById("demoTransform");
 
   /*Afficher seulement l'explication de la 1ère propriété*/
   for (let i = 1; i < block.length; i++) {
@@ -115,4 +117,32 @@ function changeCss(name) {
       }else{
         setTimeout(reset,4000);
       }
+    }
+
+    //open le bloc demo2d
+    function openDemo(){
+      if(demo2d.style.display=="none"){
+        demo2d.style.display="block";
+        cube.style.display ="none";
+      }
+    }
+
+    //open le bloc demo3d
+    function openCube(){
+      if(cube.style.display=="none" || cube.style.display==""){
+        cube.style.display="block";
+        demo2d.style.display="none";
+      }
+    }
+
+    //change keyfrmaes for demo2d
+    function changeDemoFrames(name){
+      openDemo();
+      demo2d.style.animationName = name;
+    }
+
+    //change keyframes for demo3d
+    function changeCubeFrames(name){
+      openCube()
+      cube.style.animationName = name;
     }
