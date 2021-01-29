@@ -2,7 +2,7 @@
   position: relative;
 
   &.active {
-    color: green
+    color: $main-color
   }
 
   &.active::before {
@@ -11,7 +11,7 @@
 }
 
 .underline-link:hover, .underline-link:focus {
-  color: green;
+  color: $main-color;
 }
 
 .underline-link:before {
@@ -22,7 +22,7 @@
   left: 0;
   height: 2px;
   width: 0px;
-  background-color: green;
+  background-color: $main-color;
   transition: 0.3s;
 }
 

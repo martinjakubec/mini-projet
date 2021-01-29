@@ -1,0 +1,34 @@
+.menu-button {
+  position: relative;
+  
+  &.active {
+    color: $main-color
+  }
+
+  &.active::before {
+    width: 100%;
+  }
+}
+
+.menu-button:hover, .menu-button:focus {
+  color: $main-color;
+}
+
+.menu-button:before {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  height: 2px;
+  width: 0px;
+  background-color: $main-color;
+  transition: 0.3s;
+}
+
+.menu-button:hover, .menu-button:focus {
+  &::before {
+    width: 100%;
+    transition: 0.3s;
+  }
+}

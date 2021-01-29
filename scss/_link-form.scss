@@ -39,7 +39,7 @@
       left: 0;
       height: 3px;
       width: 0;
-      background-color: green;
+      background-color: $main-color;
       z-index: 2;
       transition: 0.3s;
     }
@@ -80,7 +80,7 @@
       left: 0;
       height: 3px;
       width: 0;
-      background-color: green;
+      background-color: $main-color;
       z-index: 2;
       transition: 0.3s;
     }
