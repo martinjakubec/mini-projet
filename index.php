@@ -50,6 +50,7 @@ $page_include = $page_include . ".php";
   <main class="container">
     <?php include $page_include; ?>
   </main>
+  <a href="#top" id="toTop"><p>&#10148;</p></a>
   <footer>
     <?php include 'footer.php'; ?>
   </footer>

@@ -13,6 +13,9 @@
 @import './demo-transform';
 @import './demo-bgimg';
 
+@import './block';
+@import './code';
+
 :root {
   font-size: 10px;
 }
@@ -34,4 +37,8 @@ body {
 h1 {
   text-align: center;
   font-weight: bold;
+}
+
+article,p,pre,dd,dt{
+  line-height: 150%;
 }

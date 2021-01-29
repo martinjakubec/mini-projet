@@ -1,4 +1,4 @@
-  var btn = document.getElementsByClassName('btnNav');
+  var btn = document.getElementsByClassName('navOut');
   var block = document.getElementsByClassName('propContenu');
   var demoAnimation = document.getElementById("demoAnimation");
   var demo2d = document.getElementById("demo2d");
@@ -18,19 +18,10 @@
     }
   }
 
-  /*Function qui changer la couleur de fond du bouton cliqué*/
-  function bgColor(n) {
-    for (let i = 0; i < btn.length; i++) {
-      btn[i].style.backgroundColor = 'yellow';
-    }
-    btn[n].style.backgroundColor = 'orange';
-  }
-
   /*Attacher function blockAppear et bgColor aux boutons de nav*/
   for (let i = 0; i < btn.length; i++) {
     btn[i].onclick = function () {
       blockAppear(i);
-      bgColor(i);
     };
   }
 
@@ -153,4 +144,12 @@ function changeCss(name) {
     //change classname for demo backgroundimage
     function changeClass(name){
       image.className = name;
+    }
+
+    //button to top
+    window.onscroll = function(){
+      var top = document.getElementById("toTop");
+      if(document.documentElement.scrollTop + document.body.scrollTop > 100){
+        top.className = "top";
+      }else{top.classList.remove("top");}
     }

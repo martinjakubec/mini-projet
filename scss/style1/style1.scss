@@ -4,3 +4,25 @@
 body {
   background-color: #ddd;
 }
+
+.propContenu code,.propContenu pre{
+  background-color:#ffe5e0;
+  color:purple;;
+}
+pre{
+  box-shadow:5px 5px 5px tomato;
+}
+dt{
+  background-color:tomato;
+}
+dd ul li::before{
+  background-color:tomato;
+}
+
+#toTop{
+  background-color:#ffe5e0;
+  border:5px solid tomato;
+  p{
+    color:tomato;
+  }
+}
