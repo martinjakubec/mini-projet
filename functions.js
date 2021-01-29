@@ -149,7 +149,7 @@ function changeCss(name) {
     //button to top
     window.onscroll = function(){
       var top = document.getElementById("toTop");
-      if(document.documentElement.scrollTop + document.body.scrollTop > 100){
+      if(document.documentElement.scrollTop || document.body.scrollTop > 600){
         top.className = "top";
       }else{top.classList.remove("top");}
     }

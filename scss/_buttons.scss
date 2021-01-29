@@ -54,9 +54,7 @@
   text-align: center;
   height: 100px;
   width: 100px;
-  border: 5px solid tomato;
   text-decoration: none;
-  color: tomato;
   font-family: sans-serif;
   font-weight: bold;
   transform: rotate(45deg);
@@ -75,7 +73,6 @@
     bottom: -15px;
     height: 4px;
     width: 60px;
-    background-color: purple;
     transition: 0.2s;
     border-radius: 2px; }
   .btnOut::after {
@@ -87,12 +84,10 @@
     right: -15px;
     height: 30px;
     width: 4px;
-    background-color: purple;
     transition: 0.2s;
     border-radius: 2px; }
   .btnOut:hover {
-    transform: rotate(45deg) translate(-10px, -10px);
-    background-color: #ffe5e0; }
+    transform: rotate(45deg) translate(-10px, -10px); }
     .btnOut:hover::before {
       left: 50px;
       width: 20px; }
@@ -105,7 +100,6 @@
     text-decoration: none;
     color: black;
     font-family: sans-serif;
-    color: orangered;
     font-weight: bold;
   }
   .navOut::after {
@@ -114,7 +108,6 @@
     box-sizing: border-box;
     height: 6px;
     width: 40px;
-    background-color: purple;
     border-radius: 6px;
     position: absolute;
     bottom: -10px;
