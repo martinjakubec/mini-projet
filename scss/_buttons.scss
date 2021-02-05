@@ -54,32 +54,3 @@
 .subnav{
   justify-content:space-around;
 }
-
-
-  #toTop{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    width:80px;
-    height:80px;
-    border-radius:40px;
-    padding:10px;
-    opacity:0;
-    text-decoration:none;
-    cursor:pointer;
-    p{
-        text-align:center;
-        font-family:monospace;
-        font-size:40px;
-        font-weight:bold;
-    }
-
-  }
-  .top{
-    opacity:1 !important;
-    position:fixed;
-    bottom:100px;
-    right:30px;
-    transform:rotate(-90deg) translateY(3px);
-    transition:0.2s;
-  }
