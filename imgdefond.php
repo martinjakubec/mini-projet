@@ -70,11 +70,11 @@
       </dl>
     </article>
     <section class="btnZone">
-      <button class="btnOut" onclick='changeClass("imgfond")'><p class="btnTxt">Image de fond</p></button>
-      <button class="btnOut" onclick='changeClass("degradelineaire")'><p class="btnTxt">Dégradé linéaire</p></button>
-      <button class="btnOut" onclick='changeClass("degradelineairerepeat")'><p class="btnTxt">Dégradé linéaire répété</p></button>
-      <button class="btnOut" onclick='changeClass("degraderadial")'><p class="btnTxt">Dégradé radial</p></button>
-      <button class="btnOut" onclick='changeClass("degraderadialrepeat")'><p class="btnTxt">Dégradé radial répété</p></button>
+      <a class="menu-button" onclick='changeClass("imgfond")'><p class="menu-button__text">Image de fond</p></a>
+      <a class="menu-button" onclick='changeClass("degradelineaire")'><p class="menu-button__text">Dégradé linéaire</p></a>
+      <a class="menu-button" onclick='changeClass("degradelineairerepeat")'><p class="menu-button__text">Dégradé linéaire répété</p></a>
+      <a class="menu-button" onclick='changeClass("degraderadial")'><p class="menu-button__text">Dégradé radial</p></a>
+      <a class="menu-button" onclick='changeClass("degraderadialrepeat")'><p class="menu-button__text">Dégradé radial répété</p></a>
     </section>
   </section>
   <section class="propContenu">
@@ -144,12 +144,12 @@
       </dl>
     </article>
     <section class="btnZone">
-      <button class="btnOut"  onclick='changeClass("norepeat")'><p class="btnTxt">No-Repeat</p></button>
-      <button class="btnOut"  onclick='changeClass("repeat")'><p class="btnTxt">Repeat</p></button>
-      <button class="btnOut"  onclick='changeClass("repeatx")'><p class="btnTxt">Repeat-x</p></button>
-      <button class="btnOut"  onclick='changeClass("repeaty")'><p class="btnTxt">Repeat-y</p></button>
-      <button class="btnOut"  onclick='changeClass("space")'><p class="btnTxt">Space</p></button>
-      <button class="btnOut"  onclick='changeClass("round")'><p class="btnTxt">Round</p></button>
+      <a class="menu-button"  onclick='changeClass("norepeat")'><p class="menu-button__text">No-Repeat</p></a>
+      <a class="menu-button"  onclick='changeClass("repeat")'><p class="menu-button__text">Repeat</p></a>
+      <a class="menu-button"  onclick='changeClass("repeatx")'><p class="menu-button__text">Repeat-x</p></a>
+      <a class="menu-button"  onclick='changeClass("repeaty")'><p class="menu-button__text">Repeat-y</p></a>
+      <a class="menu-button"  onclick='changeClass("space")'><p class="menu-button__text">Space</p></a>
+      <a class="menu-button"  onclick='changeClass("round")'><p class="menu-button__text">Round</p></a>
     </section>
   </section>
   <section class="propContenu">
@@ -192,9 +192,9 @@
       </dl>
     </article>
     <section class="btnZone">
-      <button class="btnOut" onclick='changeClass("center")'><p class="btnTxt">Center</p></button>
-      <button class="btnOut" onclick='changeClass("pourcentage")'><p class="btnTxt">25% 75%</p></button>
-      <button class="btnOut" onclick='changeClass("unite")'><p class="btnTxt">25px 75px</p></button>
+      <a class="menu-button" onclick='changeClass("center")'><p class="menu-button__text">Center</p></a>
+      <a class="menu-button" onclick='changeClass("pourcentage")'><p class="menu-button__text">25% 75%</p></a>
+      <a class="menu-button" onclick='changeClass("unite")'><p class="menu-button__text">25px 75px</p></a>
     </section>
   </section>
   <section class="propContenu">
@@ -259,11 +259,11 @@
       </dd>
     </article>
     <section class="btnZone">
-      <button class="btnOut" onclick='changeClass("auto")'><p class="btnTxt">auto</p></button>
-      <button class="btnOut" onclick='changeClass("width300")'><p class="btnTxt">300px 200px</p></button>
-      <button class="btnOut" onclick='changeClass("demi")'><p class="btnTxt">50% 50%</p></button>
-      <button class="btnOut" onclick='changeClass("cover")'><p class="btnTxt">cover</p></button>
-      <button class="btnOut" onclick='changeClass("contain")'><p class="btnTxt">contain</p></button>
+      <a class="menu-button" onclick='changeClass("auto")'><p class="menu-button__text">auto</p></a>
+      <a class="menu-button" onclick='changeClass("width300")'><p class="menu-button__text">300px 200px</p></a>
+      <a class="menu-button" onclick='changeClass("demi")'><p class="menu-button__text">50% 50%</p></a>
+      <a class="menu-button" onclick='changeClass("cover")'><p class="menu-button__text">cover</p></a>
+      <a class="menu-button" onclick='changeClass("contain")'><p class="menu-button__text">contain</p></a>
     </section>
   </section>
   <section class="demo">

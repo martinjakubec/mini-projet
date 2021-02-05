@@ -31,9 +31,9 @@
   </code>
   </article>
   <section class="btnZone">
-    <button class="btnOut" onclick='changeDemoFrames("translate")'><p class="btnTxt">Déplacer sur l'axe X et Y</p></button>
-    <button class="btnOut" onclick='changeDemoFrames("translatex")'><p class="btnTxt">Déplacer sur l'axe X</p></button>
-    <button class="btnOut" onclick='changeDemoFrames("translatey")'><p class="btnTxt">Déplacer sur l'axe Y</p></button>
+    <a class="menu-button" onclick='changeDemoFrames("translate")'><p class="menu-button__text">Sur l'axe X et Y</p></a>
+    <a class="menu-button" onclick='changeDemoFrames("translatex")'><p class="menu-button__text">Sur l'axe X</p></a>
+    <a class="menu-button" onclick='changeDemoFrames("translatey")'><p class="menu-button__text">Sur l'axe Y</p></a>
   </section>
   </section>
   <section class="propContenu">
@@ -52,8 +52,8 @@
       </code>
     </article>
     <section class="btnZone">
-      <button class="btnOut" onclick='changeDemoFrames("rotater")'><p class="btnTxt">Pivoter à droite</p></button>
-      <button class="btnOut" onclick='changeDemoFrames("rotatel")'><p class="btnTxt">Pivoter à gauche</p></button>
+      <a class="menu-button" onclick='changeDemoFrames("rotater")'><p class="menu-button__text">A droite</p></a>
+      <a class="menu-button" onclick='changeDemoFrames("rotatel")'><p class="menu-button__text">A gauche</p></a>
   </section>
   </section>
   <section class="propContenu">
@@ -76,9 +76,9 @@
       </code>
     </article>
     <section class="btnZone">
-      <button class="btnOut" onclick='changeDemoFrames("scaleg")'><p class="btnTxt">2 fois plus grand</p></button>
-      <button class="btnOut" onclick='changeDemoFrames("scalew")'><p class="btnTxt">2 fois moins long</p></button>
-      <button class="btnOut" onclick='changeDemoFrames("scaleh")'><p class="btnTxt">2 fois plus haut</p></button>
+      <a class="menu-button" onclick='changeDemoFrames("scaleg")'><p class="menu-button__text">2 fois plus grand</p></a>
+      <a class="menu-button" onclick='changeDemoFrames("scalew")'><p class="menu-button__text">2 fois moins long</p></a>
+      <a class="menu-button" onclick='changeDemoFrames("scaleh")'><p class="menu-button__text">2 fois plus haut</p></a>
     </section>
   </section>
   <section class="propContenu">
@@ -101,9 +101,9 @@
       </code>
     </article>
     <section class="btnZone">
-      <button class="btnOut" onclick='changeDemoFrames("skew")'><p class="btnTxt">S'incliner sur l'axe X et Y</p></button>
-      <button class="btnOut" onclick='changeDemoFrames("skewx")'><p class="btnTxt">S'incliner sur l'axe X</p></button>
-      <button class="btnOut" onclick='changeDemoFrames("skewy")'><p class="btnTxt">S'incliner sur l'axe Y</p></button>
+      <a class="menu-button" onclick='changeDemoFrames("skew")'><p class="menu-button__text">Sur l'axe X et Y</p></a>
+      <a class="menu-button" onclick='changeDemoFrames("skewx")'><p class="menu-button__text">Sur l'axe X</p></a>
+      <a class="menu-button" onclick='changeDemoFrames("skewy")'><p class="menu-button__text">Sur l'axe Y</p></a>
     </section>
   </section>
   <section class="propContenu">
@@ -138,9 +138,9 @@
       </dl>
     </article>
     <section class="btnZone">
-      <button class="btnOut" onclick='changeCubeFrames("translate3")'><p class="btnTxt">Déplacer sur l'axe z</p></button>
-      <button class="btnOut" onclick='changeCubeFrames("rotate3")'><p class="btnTxt">Pivoter sur l'axe z</p></button>
-      <button class="btnOut" onclick='changeCubeFrames("scale3")'><p class="btnTxt">Elargir sur l'axe z</p></button>
+      <a class="menu-button" onclick='changeCubeFrames("translate3")'><p class="menu-button__text">Déplacer</p></a>
+      <a class="menu-button" onclick='changeCubeFrames("rotate3")'><p class="menu-button__text">Pivoter</p></a>
+      <a class="menu-button" onclick='changeCubeFrames("scale3")'><p class="menu-button__text">Elargir</p></a>
     </section>
   </section>
   <section class="demo">
