@@ -129,7 +129,7 @@
     height:80px;
     border-radius:40px;
     padding:10px;
-    opacity:1;
+    opacity:0;
     text-decoration:none;
     cursor:pointer;
     p{
@@ -141,7 +141,7 @@
 
   }
   .top{
-    opacity:0;
+    opacity:1 !important;
     position:fixed;
     bottom:100px;
     right:30px;
