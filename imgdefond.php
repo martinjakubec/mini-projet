@@ -29,7 +29,7 @@
             <pre>.demo{
               background-image:linear-gradient(green, blue);
             }
-            </pre>
+          </pre>
           </code>
         </dd>
         <dt>repeating-linear-gradient</dt>
@@ -46,7 +46,7 @@
             <pre>.demo{
               background-image:repeating-linear-gradient(45deg, green 10%, blue 20%);
             }
-            </pre>
+          </pre>
           </code>
         </dd>
         <dt>radial-gradient</dt>
