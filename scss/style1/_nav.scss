@@ -7,6 +7,12 @@
   height: 200px;
 }
 
+#menu {
+  @media (max-width: 900px) {
+    height: 100vh;
+  }
+}
+
 .menu-button {
   position: relative;
   text-align: center;

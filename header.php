@@ -1,5 +1,5 @@
 <nav id="mobile-header">
-  <p id="menu-toggle" class="menu-button">Menu</p>
+  <p id="menu-toggle" >Menu</p>
 </nav>
 <nav id="menu">
   <div class="container">

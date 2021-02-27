@@ -1,3 +1,18 @@
+#menu {
+  @media (max-width: 900px) {
+    padding-top: 50px;
+    p {
+      margin: 50px 0;
+    }
+  }
+
+  .menu-button {
+    @media (max-width: 900px) {
+      font-size: 30px;
+    }
+  }
+}
+
 .menu-button {
   position: relative;
   
@@ -8,6 +23,7 @@
   &.active::before {
     width: 100%;
   }
+  
 }
 
 .menu-button:hover, .menu-button:focus {
@@ -24,6 +40,8 @@
   width: 0px;
   background-color: $main-color;
   transition: 0.3s;
+
+  
 }
 
 .menu-button:hover, .menu-button:focus {
