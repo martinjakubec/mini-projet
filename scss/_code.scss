@@ -1,7 +1,14 @@
-.propContenu code,.propContenu pre{
+code, pre{
   font-family:monospace;
 }
+code .indent1{
+  text-indent:10%;
+}
+code .indent2{
+  text-indent:20%;
+}
 pre{
+  white-space:pre-wrap;
   padding-top:30px;
   max-height:500px;
   border-radius:30px;

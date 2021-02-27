@@ -2,7 +2,7 @@
   width: 100%;
   margin-bottom: 50px;
   border-bottom: 1px solid black;
-  
+
   div {
     align-items: center;
     display: flex;
@@ -29,10 +29,11 @@
     z-index: 99;
     transition-property: right;
     transition-duration: 0.5s;
-    
+
     &.shown {
       right: 0px;
     }
+    transition: 0.5s;
 
     div {
       display: flex;
@@ -43,8 +44,6 @@
       margin: 10px auto;
     }
   }
-
-
 }
 
 #mobile-header {
@@ -55,19 +54,21 @@
   align-items: center;
   justify-content: flex-end;
   padding-right: 20px;
-  
+
   @media screen and (max-width: 900px) {
-    // display: block;
-    display: flex;
-  }
+    @media screen and (max-width: 599px) {
+      // display: block;
+      display: flex;
+    }
 
-  #menu-toggle {
-    z-index: 100;
-    position: relative;
-    cursor: pointer;
+    #menu-toggle {
+      z-index: 100;
+      position: relative;
+      cursor: pointer;
 
-    &.fixed {
-      position: fixed;
+      &.fixed {
+        position: fixed;
+      }
     }
   }
 }

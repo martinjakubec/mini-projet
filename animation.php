@@ -5,12 +5,12 @@
     </p>
   </article>
   <nav class="subnav">
-    <a href="#" class="navOut"><p class="navTxt">Keyframe et animation-duration</p></a>
-    <a href="#" class="navOut"><p class="navTxt">Animation-delay</p></a>
-    <a href="#" class="navOut"><p class="navTxt">Animation-iteration-count</p></a>
-    <a href="#" class="navOut"><p class="navTxt">Animation-direction</p></a>
-    <a href="#" class="navOut"><p class="navTxt">Animation-timing-function</p></a>
-    <a href="#" class="navOut"><p class="navTxt">Animation-fill-mode</p></a>
+    <a href="#" class="navOut"><p class="navTxt">Keyframe et duration</p></a>
+    <a href="#" class="navOut"><p class="navTxt">Delay</p></a>
+    <a href="#" class="navOut"><p class="navTxt">Iteration count</p></a>
+    <a href="#" class="navOut"><p class="navTxt">Direction</p></a>
+    <a href="#" class="navOut"><p class="navTxt">Timing function</p></a>
+    <a href="#" class="navOut"><p class="navTxt">Fill mode</p></a>
   </nav>
   <section class="propContenu">
     <article>
@@ -48,8 +48,8 @@
       </dl>
     </article>
     <section class="btnZone">
-      <button class="btnOut" onclick='changeDuration("2s")'><p class="btnTxt">Changer de couleur en 2s</p></button>
-      <button class="btnOut" onclick='changeDuration("3s")'><p class="btnTxt">Changer de couleur en 3s</p></button>
+      <a class="menu-button" onclick='changeDuration("2s")'><p class="menu-button__text">Changer en 2s</p></a>
+      <a class="menu-button" onclick='changeDuration("3s")'><p class="menu-button__text">Changer en 3s</p></a>
     </section>
   </section>
   <section class="propContenu">
@@ -80,8 +80,8 @@
       </dl>
     </article>
     <section class="btnZone">
-      <button class="btnOut"  onclick='changeDelay("2s")'><p class="btnTxt">Démarrer dans 2s</p></button>
-      <button class="btnOut"  onclick='changeDelay("-2s")'><p class="btnTxt">Démarrer dans -2s</p></button>
+      <a class="menu-button"  onclick='changeDelay("2s")'><p class="menu-button__text">Démarrer dans 2s</p></a>
+      <a class="menu-button"  onclick='changeDelay("-2s")'><p class="menu-button__text">Démarrer dans -2s</p></a>
     </section>
   </section>
   <section class="propContenu">
@@ -112,8 +112,8 @@
       </dl>
     </article>
     <section class="btnZone">
-      <button class="btnOut"  onclick="changeCount(2)"><p class="btnTxt">Répéter 2 fois</p></button>
-      <button class="btnOut"  onclick='changeCount("infinite")'><p class="btnTxt">Répéter en permanence</p></button>
+      <a class="menu-button"  onclick="changeCount(2)"><p class="menu-button__text">Répéter 2 fois</p></a>
+      <a class="menu-button"  onclick='changeCount("infinite")'><p class="menu-button__text">Répéter toujours</p></a>
     </section>
   </section>
   <section class="propContenu">
@@ -166,9 +166,9 @@
       </dl>
     </article>
     <section class="btnZone">
-      <button class="btnOut"  onclick='changeDirection("reverse")'><p class="btnTxt">Reverse</p></button>
-      <button class="btnOut"  onclick='changeDirection("alternate")'><p class="btnTxt">alternate</p></button>
-      <button class="btnOut"  onclick='changeDirection("alternate-reverse")'><p class="btnTxt">alternate-reverse</p></button>
+      <a class="menu-button"  onclick='changeDirection("reverse")'><p class="menu-button__text">Reverse</p></a>
+      <a class="menu-button"  onclick='changeDirection("alternate")'><p class="menu-button__text">alternate</p></a>
+      <a class="menu-button"  onclick='changeDirection("alternate-reverse")'><p class="menu-button__text">alternate-reverse</p></a>
     </section>
   </section>
   <section class="propContenu">
@@ -243,12 +243,12 @@
       </dl>
     </article>
     <section class="btnZone">
-      <button class="btnOut" onclick='changeTiming("ease")'><p class="btnTxt">Ease</p></button>
-      <button class="btnOut" onclick='changeTiming("linear")'><p class="btnTxt">Linear</p></button>
-      <button class="btnOut" onclick='changeTiming("ease-in")'><p class="btnTxt">Ease-in</p></button>
-      <button class="btnOut" onclick='changeTiming("ease-out")'><p class="btnTxt">Ease-out</p></button>
-      <button class="btnOut" onclick='changeTiming("ease-in-out")'><p class="btnTxt">Ease-in-out</p></button>
-      <button class="btnOut" onclick='changeTiming("cubic-bezier(0.5,0.1,1,0.1)")'><p class="btnTxt">Cubic-bezier</p></a>
+      <a class="menu-button" onclick='changeTiming("ease")'><p class="menu-button__text">Ease</p></a>
+      <a class="menu-button" onclick='changeTiming("linear")'><p class="menu-button__text">Linear</p></a>
+      <a class="menu-button" onclick='changeTiming("ease-in")'><p class="menu-button__text">Ease-in</p></a>
+      <a class="menu-button" onclick='changeTiming("ease-out")'><p class="menu-button__text">Ease-out</p></a>
+      <a class="menu-button" onclick='changeTiming("ease-in-out")'><p class="menu-button__text">Ease-in-out</p></a>
+      <a class="menu-button" onclick='changeTiming("cubic-bezier(0.5,0.1,1,0.1)")'><p class="menu-button__text">Cubic-bezier</p></a>
     </section>
   </section>
   <section class="propContenu">
@@ -301,10 +301,10 @@
       </dl>
     </article>
     <section class="btnZone">
-      <button class="btnOut" onclick='changeFill("none")'><p class="btnTxt">None</p></button>
-      <button class="btnOut" onclick='changeFill("forwards")'><p class="btnTxt">Forwards</p></button>
-      <button class="btnOut" onclick='changeFill("backwards")'><p class="btnTxt">Backwards</p></button>
-      <button class="btnOut" onclick='changeFill("both")'><p class="btnTxt">Both</p></button>
+      <a class="menu-button" onclick='changeFill("none")'><p class="menu-button__text">None</p></a>
+      <a class="menu-button" onclick='changeFill("forwards")'><p class="menu-button__text">Forwards</p></a>
+      <a class="menu-button" onclick='changeFill("backwards")'><p class="menu-button__text">Backwards</p></a>
+      <a class="menu-button" onclick='changeFill("both")'><p class="menu-button__text">Both</p></a>
     </section>
   </section>
   <section class="demo">

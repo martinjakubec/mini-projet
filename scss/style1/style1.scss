@@ -7,7 +7,7 @@ body {
   background-color: #ddd;
 }
 
-.propContenu code,.propContenu pre{
+code, pre{
   background-color:lighten($secondary-color,40);
   color:$main-color;
 }
@@ -27,20 +27,6 @@ dd ul li::before{
   p{
     color:$main-color;
   }
-}
-.btnOut{
-  background-color:#ddd;
-  border: 5px solid $main-color;
-  color:$main-color;
-}
-.btnOut::before{
-  background-color:$secondary-color;
-}
-.btnOut::after{
-      background-color: $secondary-color;
-}
-.btnOut:hover{
-      background-color: lighten($secondary-color,40);
 }
 
 .navOut{
