@@ -35,7 +35,8 @@
 
   &__text {
     transform: rotate(-45deg);
-    text-transform: lowercase;
+    text-transform: capitalize;
+    font-size: 1.5rem;
   }
 
   &::before {

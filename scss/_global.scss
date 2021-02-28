@@ -30,7 +30,6 @@ body {
   position: relative;
 }
 
-
 .container {
   max-width: 1000px;
   margin: auto;
@@ -41,6 +40,10 @@ h1 {
   font-weight: bold;
 }
 
-article,p,pre,dd,dt{
+article,
+p,
+pre,
+dd,
+dt {
   line-height: 150%;
 }

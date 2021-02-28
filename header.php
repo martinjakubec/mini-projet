@@ -2,6 +2,7 @@
   <p id="menu-toggle" >Menu</p>
 </nav>
 <nav id="menu">
+  <img src="./image/logo.svg" alt="Logo Aijia et Martin" width="40" class="logo-site">
   <div class="container">
     <p><a class="<?php echo ($page == '') ? 'active' : ''; ?> menu-button" href="?"><span class="menu-button__text">Accueil</span></a>
     <p><a class="<?php echo ($page == 'animation') ? 'active' : ''; ?> menu-button" href="?page=animation"><span class="menu-button__text">Animation</span></a>

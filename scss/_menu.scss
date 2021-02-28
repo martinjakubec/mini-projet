@@ -1,13 +1,31 @@
 #menu {
   width: 100%;
   margin-bottom: 50px;
-  border-bottom: 1px solid black;
+  position: relative;
+
+  .logo-site {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    @media (max-width: 900px) {
+      left: 50%;
+      transform: translateX(-50%);
+      top: 20px;
+    }
+  }
+
 
   div {
     align-items: center;
     display: flex;
     justify-content: space-between;
     height: 50px;
+
+    @media (max-width: 1150px) and (min-width: 900px) {
+      padding-left: 65px;
+    }
   }
 
   p {
@@ -50,16 +68,13 @@
   display: none;
   height: 50px;
   text-align: right;
-  border-bottom: 1px solid black;
   align-items: center;
   justify-content: flex-end;
   padding-right: 20px;
 
   @media screen and (max-width: 900px) {
-    @media screen and (max-width: 599px) {
-      // display: block;
-      display: flex;
-    }
+    // display: block;
+    display: flex;
 
     #menu-toggle {
       z-index: 100;
